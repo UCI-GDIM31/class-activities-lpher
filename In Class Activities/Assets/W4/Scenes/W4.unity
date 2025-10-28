@@ -6964,9 +6964,11 @@ GameObject:
   - component: {fileID: 6397291155275392794}
   - component: {fileID: 6397291155275392798}
   - component: {fileID: 6397291155275392799}
+  - component: {fileID: 6397291155275392800}
+  - component: {fileID: 6397291155275392801}
   m_Layer: 0
   m_Name: Cat
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7006,11 +7008,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CatW4
   _moveSpeed: 2.5
-  _turnSpeed: 100
-  _kickUpwardForce: 1
-  _kickForce: 2
+  _turnSpeed: 180
+  _kickUpwardForce: 0.5
+  _kickForce: 2.5
   _jumpForce: 5
-  _rigidBody: {fileID: 0}
+  _rigidBody: {fileID: 6397291155275392800}
   _animator: {fileID: 6397291155275392794}
 --- !u!136 &6397291155275392799
 CapsuleCollider:
@@ -7027,14 +7029,55 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1812842
-  m_Height: 0.6983409
+  m_Radius: 0.17402947
+  m_Height: 0.67061645
   m_Direction: 2
-  m_Center: {x: 0, y: 0.15531696, z: -0.047564983}
+  m_Center: {x: 0, y: 0.14811495, z: -0.06665149}
+--- !u!54 &6397291155275392800
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6397291155275392791}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!114 &6397291155275392801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6397291155275392791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d99774276e3f43b192a53df5fde03de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BounceOffWall
+  _rigidBody: {fileID: 6397291155275392800}
+  _bounceForce: 6
 --- !u!1 &6499904795538962815
 GameObject:
   m_ObjectHideFlags: 0
@@ -7303,6 +7346,7 @@ GameObject:
   - component: {fileID: 8101201615804560248}
   - component: {fileID: 8101201615804560250}
   - component: {fileID: 8101201615804560249}
+  - component: {fileID: 8101201615804560251}
   m_Layer: 0
   m_Name: SoccerBall
   m_TagString: Ball
@@ -7437,6 +7481,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.08545173
   m_Center: {x: -0.000056624413, y: 0.0015806183, z: 0.00046431273}
+--- !u!114 &8101201615804560251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7741058300408910497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d99774276e3f43b192a53df5fde03de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BounceOffWall
+  _rigidBody: {fileID: 8101201615804560249}
+  _bounceForce: 6
 --- !u!4 &8115783459852817865
 Transform:
   m_ObjectHideFlags: 0
