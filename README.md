@@ -18,6 +18,8 @@ My question for activity 1 was what does the Vector3(1, 1, 1) do? One of my tabl
 ### W6
 To create the BatW6 class we first add a tunable speed variable. Add methods to chase and stop chasing the cat. Make Update method to make bats move. I worked on [blank] and here is the link: [W6 Group Doc](https://docs.google.com/document/d/1JjeQbCCUjY07LrZi49c0iomh2LtX_U5325lBy6n0Y44/edit?tab=t.0#heading=h.i62ytpqepny2). The BatW6 class needs three key variables: the bat’s speed, a reference to the Cat so it knows where to go, and a boolean to track whether it’s currently chasing. It uses Unity’s Update() method to move the bat toward the Cat whenever chasing is true. It also has two public methods, StartChasing() and StopChasing(), which turn chasing on or off so other scripts, like BatManager, can control the bat. I contributed to the other tools category.
 
+Question/Something I came across: When I clicked on the "Bats" tab in the hierarchy, Unity would give me errors and be unable to run the game. However, when I cleared the console and clicked on the "Bat" or "Eventsystem" and ran the game, Unity would run the game normally. Why is that?
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
