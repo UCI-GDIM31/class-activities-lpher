@@ -165,4 +165,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95bb3dfe0b98743ef8b5eec0b96afb62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyTimer
-  _maxTime: 3
+  _maxTime: 2
