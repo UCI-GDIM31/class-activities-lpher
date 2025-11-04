@@ -78,6 +78,7 @@ public class BatManager : MonoBehaviour
     private void SpawnReactionUI(BatW6 bat, string message)
     {
         int index = System.Array.IndexOf(_bats, bat);
+
         GridLayoutGroup layout = bat.GetComponentInChildren<GridLayoutGroup>();
         if (layout != null && _newTextTimers[index] >= _timeBetweenNewMessages)
         {
