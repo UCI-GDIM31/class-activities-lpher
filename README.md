@@ -20,6 +20,9 @@ To create the BatW6 class we first add a tunable speed variable. Add methods to 
 
 Question/Something I came across: When I clicked on the "Bats" tab in the hierarchy, Unity would give me errors and be unable to run the game. However, when I cleared the console and clicked on the "Bat" or "Eventsystem" and ran the game, Unity would run the game normally. Why is that?
 
+### W7
+<see href="https://docs.google.com/document/d/10R14qZZetU1eLqxvVqzBbsszbVETJhnGCUluOARTfZg/edit?usp=sharing"/>I worked on the animation portion in my group. Step 2 needed to be a method like in Step 1. It also needed “transform.Translate” not “transform.position”.  Looking up “transform.position” on the Unity Documentation website, “transform.position” is the world space position of the transform. In the game, we need the muskrat to move on the local space, not the world space. Translate works for object space which is relevant to our muskrat.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
